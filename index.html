@@ -1,5 +1,25 @@
-<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> 
+<!DOCTYPE html>
+<html>
+<body>
 
-<audio id="player" autoplay loop>
-    <source src="https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3" type="audio/mp3">
+<audio id="myAudio" controls autoplay controls loop>
+  <source src="https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3" type="audio/mpeg">
+  <source src="https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3" type="audio/mpeg">
+ 
 </audio>
+
+
+
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myAudio").autoplay;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
